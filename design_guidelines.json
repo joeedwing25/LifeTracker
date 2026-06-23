@@ -1,0 +1,118 @@
+{
+  "theme": "LIGHT",
+  "archetype": "Swiss & High-Contrast combined with Apple Glassmorphism",
+  "design_philosophy": "Ultra-minimal, cinematic, and deeply personal. Life OS combines the rigid hierarchy of Swiss design (giant typography, monochrome aesthetic, high contrast) with the tactile, premium feel of Apple's glassmorphism (soft white backgrounds, rounded cards, floating actions). It feels like a futuristic command center that is calming rather than overwhelming.",
+  "colors": {
+    "background": {
+      "default": "#F9FAFB",
+      "card": "rgba(255, 255, 255, 0.7)",
+      "orb_glow": "rgba(139, 92, 246, 0.15)",
+      "dark_surface": "#0A0A0A"
+    },
+    "text": {
+      "primary": "#111827",
+      "secondary": "#6B7280",
+      "muted": "#9CA3AF",
+      "inverted": "#FFFFFF"
+    },
+    "border": {
+      "glass": "rgba(255, 255, 255, 0.4)",
+      "subtle": "rgba(0, 0, 0, 0.05)",
+      "strong": "#E5E7EB"
+    },
+    "accent": {
+      "primary": "#000000",
+      "glow_purple": "#8B5CF6",
+      "glow_blue": "#3B82F6",
+      "success": "#10B981"
+    }
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk, sans-serif",
+    "body_font": "Manrope, sans-serif",
+    "scales": {
+      "h1": "text-5xl sm:text-6xl+ tracking-tighter font-black uppercase",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-bold",
+      "h4": "text-lg sm:text-xl font-semibold",
+      "body": "text-base leading-relaxed text-secondary",
+      "label": "text-xs tracking-[0.2em] uppercase text-muted font-bold"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Premium spacing. Generous padding around elements to allow the typography and content to breathe.",
+    "container_padding": "p-6 md:p-8 lg:p-12",
+    "gap": "gap-6 md:gap-8",
+    "grid_patterns": {
+      "dashboard": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "bento_hero": "col-span-1 md:col-span-2 row-span-2"
+    },
+    "border_radius": "rounded-[2rem] md:rounded-[2.5rem]"
+  },
+  "surfaces_and_effects": {
+    "cards": "backdrop-blur-2xl bg-white/70 border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.04)] rounded-[2rem]",
+    "buttons": "bg-primary text-inverted rounded-full px-6 py-3 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1",
+    "glass_header": "backdrop-blur-xl bg-white/70 border-b border-white/20",
+    "orb_glow": "absolute w-32 h-32 rounded-full bg-gradient-to-r from-purple-500/30 to-blue-500/30 blur-[40px] animate-pulse"
+  },
+  "components": {
+    "cards": {
+      "type": "custom HTML with Tailwind classes",
+      "rules": "Avoid default Shadcn card if it restricts custom glassmorphism. Use div with backdrop-blur, heavy rounding (2rem+), and pure white semi-transparent background."
+    },
+    "typography": {
+      "type": "giant typography",
+      "rules": "H1 should be enormous (e.g. 'WEDNESDAY') and act as a structural element on the page. Use tracking-tighter to make it feel dense and modern."
+    },
+    "floating_action": {
+      "type": "FAB or Floating AI Orb",
+      "rules": "Must be sticky/fixed to bottom-right or bottom-center. High z-index. The orb itself should have an ethereal glow and pulsing animation."
+    }
+  },
+  "icons_and_assets": {
+    "library": "lucide-react",
+    "style": "Clean, stroke-based, minimalist",
+    "media": [
+      {
+        "category": "ai_orb",
+        "description": "Floating AI orb with subtle purple and blue neon glow for the AI Summary card or floating AI assistant."
+      },
+      {
+        "category": "background",
+        "description": "Abstract soft white 3D landscape background to be used sparsely behind glassmorphic elements to give depth."
+      },
+      {
+        "category": "roadmap_study",
+        "url": "https://images.unsplash.com/photo-1519974719765-e6559eac2575?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwc3R1ZHklMjBkZXNrJTIwd2hpdGV8ZW58MHx8fHwxNzc5NjkxNjAzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Minimalist study desk for Academics/Study Roadmap cover."
+      },
+      {
+        "category": "roadmap_fitness",
+        "url": "https://images.unsplash.com/photo-1776935889501-68e5607fa42a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwZml0bmVzcyUyMHJ1bm5pbmclMjBtb25vY2hyb21lfGVufDB8fHx8MTc3OTY5MTYyMXww&ixlib=rb-4.1.0&q=85",
+        "description": "Monochrome running figure for Fitness/Health Roadmap cover."
+      },
+      {
+        "category": "roadmap_business",
+        "url": "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwb2ZmaWNlJTIwd2hpdGV8ZW58MHx8fHwxNzc5NjkxNjIxfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Minimalist white office table for Business/Career Roadmap cover."
+      },
+      {
+        "category": "abstract_pattern",
+        "url": "https://images.unsplash.com/photo-1621619856624-42fd193a0661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMG1vbm9jaHJvbWUlMjAzZHxlbnwwfHx8fDE3Nzk2OTE2MjF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "White and black abstract geometric blocks for generic modules in Personal Dashboard."
+      }
+    ]
+  },
+  "motion_and_interaction": {
+    "hover_states": "All interactive cards should lift slightly (-translate-y-1) and increase shadow depth.",
+    "page_transitions": "Use Framer Motion for smooth fade and slide-up effects on page load.",
+    "micro_interactions": "Smooth, elastic easing for buttons and tabs. Focus rings should be subtle but clear (ring-2 ring-black/10 offset-2)."
+  },
+  "instructions_to_main_agent": [
+    "Build a local-first PWA using IndexedDB and LocalStorage for state management.",
+    "Implement navigation that works seamlessly across mobile, tablet, and desktop (bottom nav on mobile, sidebar/header on desktop).",
+    "Use Cabinet Grotesk for primary headings (H1) styled extremely large with tight tracking (e.g. tracking-tighter text-6xl+ font-black uppercase).",
+    "Apply 'glassmorphism' aggressively on dashboard cards over the abstract white background to create depth. Use backdrop-blur-2xl bg-white/70 border border-white/40.",
+    "Ensure all interactive elements have a data-testid attribute in kebab-case."
+  ]
+}

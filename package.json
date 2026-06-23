@@ -1,0 +1,22 @@
+{
+  "name": "lifetrq",
+  "version": "1.0.0",
+  "description": "LifetrQ - Your life tracking application",
+  "private": true,
+  "scripts": {
+    "install:frontend": "cd frontend && yarn install",
+    "build": "cd frontend && yarn install && yarn build",
+    "dev": "cd frontend && yarn start",
+    "start": "cd frontend && yarn start",
+    "test": "cd frontend && yarn test",
+    "eject": "cd frontend && yarn eject"
+  },
+  "workspaces": [
+    "frontend"
+  ],
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  }
+}
